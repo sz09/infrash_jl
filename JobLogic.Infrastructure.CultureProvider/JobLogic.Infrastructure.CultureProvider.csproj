@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.CultureProvider</Product>
+    <Description>JobLogic.Infrastructure.CultureProvider target .net standard 2.0</Description>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageId>JobLogic.Infrastructure.CultureProvider</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Upgrade package fix oss </PackageReleaseNotes>
+    <Version>1.150.0</Version>
+    <PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>1.150.0</FileVersion>
+    <Company>Job Logic</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>1.150.0</AssemblyVersion>
+    <Authors>Job Logic</Authors>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	  <PackageReference Include="TimeZoneConverter" Version="3.5.0" />
+  </ItemGroup>
+</Project>

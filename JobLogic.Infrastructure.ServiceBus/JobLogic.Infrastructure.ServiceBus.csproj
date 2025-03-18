@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configurations>Debug;Release;Dev;StagingTest</Configurations>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <Product>JobLogic.Infrastructure.ServiceBus</Product>
+	  <Description>Remove obsoleted un-Async method</Description>
+	  <PackageId>JobLogic.Infrastructure.ServiceBus</PackageId>
+	  <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	  <PackageReleaseNotes>Upgrade package follow Joblogic.Common change</PackageReleaseNotes>
+	  <Version>3.178.1</Version>
+	  <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+	  <Company>JobLogic</Company>
+	  <Authors>JobLogic</Authors>
+	  <Copyright>Copyright ©  2020</Copyright>
+	  <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+	  <FileVersion>3.178.1</FileVersion>
+	  <AssemblyVersion>3.178.1</AssemblyVersion>
+	  <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="JobLogic.Common" Version="1.178.1" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.1.3" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+  
+</Project>

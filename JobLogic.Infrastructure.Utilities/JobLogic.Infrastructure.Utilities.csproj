@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.Utilities</Product>
+    <Description>JobLogic.Infrastructure.Utilities 1.181.0</Description>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageId>JobLogic.Infrastructure.Utilities</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Add StringFormatUtils class</PackageReleaseNotes>
+    <Version>1.181.0</Version>
+    <PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>1.181.0</FileVersion>
+    <Company>Job Logic</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>1.181.0</AssemblyVersion>
+    <Authors>Job Logic</Authors>
+    <LangVersion>8.0</LangVersion> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="package.nuspec" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediaTypeMap.Core" Version="2.3.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+  </ItemGroup>
+</Project>
+
+

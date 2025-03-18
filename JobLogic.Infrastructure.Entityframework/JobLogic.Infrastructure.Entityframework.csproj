@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <Product>JobLogic.Infrastructure.Entityframework</Product>
+    <Description>JobLogic.Infrastructure.Entityframework</Description>
+    <PackageId>JobLogic.Infrastructure.Entityframework</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>JobLogic.Infrastructure.Entityframework</PackageReleaseNotes>
+    <Version>2.3.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>2.3.0</FileVersion>
+    <Company>JobLogic.Infrastructure.Entityframework</Company>
+    <AssemblyVersion>2.3.0</AssemblyVersion>
+    <Authors>JobLogic.Infrastructure.Entityframework</Authors>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="JobLogic.Infrastructure.Entityframework.TenancyInterceptor" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

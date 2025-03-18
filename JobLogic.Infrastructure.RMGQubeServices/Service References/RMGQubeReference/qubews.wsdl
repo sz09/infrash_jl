@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://qube.qubeglobal.com/ns/webservice/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://qube.qubeglobal.com/ns/webservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Qube Webservice</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://qube.qubeglobal.com/ns/webservice/">
+      <s:element name="Login-Overload-1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login-Overload-1Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="Login-Overload-1a">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TimeoutInterval" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login-Overload-1aResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Login-Overload-2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login-Overload-2Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="Login-Overload-2a">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TimeoutInterval" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login-Overload-2aResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Login-Overload-3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Application" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login-Overload-3Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="Login-Overload-3a">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Application" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TimeoutInterval" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login-Overload-3aResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Login-Overload-4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login-Overload-4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Login-Overload-4Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Logout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogoutResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Logout-Remove-Temp-User-Dir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserDirectory" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Logout-Remove-Temp-User-DirResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DebugAddMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DebugAddMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DebugBegin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Path" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Append" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DebugBeginResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DebugEnd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DebugEndResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetDebugFilters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FiltersAreExclusive" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Filter" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="HideTimes" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDebugFiltersResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearDebugFilters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearDebugFiltersResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmsFileDescription">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmsFileDescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmsFileDescriptionResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssemblyInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAssemblyInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAssemblyInfoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseReportResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="QubeProcess-3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcessName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Application" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeProcess-3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcess-3Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeProcess-3a">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcessName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="ActionOnAbort" type="tns:BatchActionOnAbort" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Application" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="BatchActionOnAbort">
+        <s:restriction base="s:string">
+          <s:enumeration value="ClearWithException" />
+          <s:enumeration value="ContinueNoException" />
+          <s:enumeration value="ContinueThenGenerateException" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="QubeProcess-3aResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcess-3aResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeProcess-1i">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcessName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeProcess-1iResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcess-1iResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeProcess-1ia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ActionOnAbort" type="tns:BatchActionOnAbort" />
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcessName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeProcess-1iaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcess-1iaResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeBatchProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSessionKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QubeBatchProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeBatchProcessResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmsGroups">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmsGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmsGroupsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterExe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterExeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Overload-2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcessName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Overload-2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Overload-2Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Overload-3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QubeProcessName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Application" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Overload-3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Overload-3Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Login-Overload-1SoapIn">
+    <wsdl:part name="parameters" element="tns:Login-Overload-1" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-1SoapOut">
+    <wsdl:part name="parameters" element="tns:Login-Overload-1Response" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-1aSoapIn">
+    <wsdl:part name="parameters" element="tns:Login-Overload-1a" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-1aSoapOut">
+    <wsdl:part name="parameters" element="tns:Login-Overload-1aResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-2SoapIn">
+    <wsdl:part name="parameters" element="tns:Login-Overload-2" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-2SoapOut">
+    <wsdl:part name="parameters" element="tns:Login-Overload-2Response" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-2aSoapIn">
+    <wsdl:part name="parameters" element="tns:Login-Overload-2a" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-2aSoapOut">
+    <wsdl:part name="parameters" element="tns:Login-Overload-2aResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-3SoapIn">
+    <wsdl:part name="parameters" element="tns:Login-Overload-3" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-3SoapOut">
+    <wsdl:part name="parameters" element="tns:Login-Overload-3Response" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-3aSoapIn">
+    <wsdl:part name="parameters" element="tns:Login-Overload-3a" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-3aSoapOut">
+    <wsdl:part name="parameters" element="tns:Login-Overload-3aResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-4SoapIn">
+    <wsdl:part name="parameters" element="tns:Login-Overload-4" />
+  </wsdl:message>
+  <wsdl:message name="Login-Overload-4SoapOut">
+    <wsdl:part name="parameters" element="tns:Login-Overload-4Response" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="Logout-Remove-Temp-User-DirSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout-Remove-Temp-User-Dir" />
+  </wsdl:message>
+  <wsdl:message name="Logout-Remove-Temp-User-DirSoapOut">
+    <wsdl:part name="parameters" element="tns:Logout-Remove-Temp-User-DirResponse" />
+  </wsdl:message>
+  <wsdl:message name="DebugAddMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:DebugAddMessage" />
+  </wsdl:message>
+  <wsdl:message name="DebugAddMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:DebugAddMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="DebugBeginSoapIn">
+    <wsdl:part name="parameters" element="tns:DebugBegin" />
+  </wsdl:message>
+  <wsdl:message name="DebugBeginSoapOut">
+    <wsdl:part name="parameters" element="tns:DebugBeginResponse" />
+  </wsdl:message>
+  <wsdl:message name="DebugEndSoapIn">
+    <wsdl:part name="parameters" element="tns:DebugEnd" />
+  </wsdl:message>
+  <wsdl:message name="DebugEndSoapOut">
+    <wsdl:part name="parameters" element="tns:DebugEndResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDebugFiltersSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDebugFilters" />
+  </wsdl:message>
+  <wsdl:message name="SetDebugFiltersSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDebugFiltersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearDebugFiltersSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearDebugFilters" />
+  </wsdl:message>
+  <wsdl:message name="ClearDebugFiltersSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearDebugFiltersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmsFileDescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmsFileDescription" />
+  </wsdl:message>
+  <wsdl:message name="GetEmsFileDescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmsFileDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAssemblyInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAssemblyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseReportSoapIn">
+    <wsdl:part name="parameters" element="tns:CloseReport" />
+  </wsdl:message>
+  <wsdl:message name="CloseReportSoapOut">
+    <wsdl:part name="parameters" element="tns:CloseReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-3SoapIn">
+    <wsdl:part name="parameters" element="tns:QubeProcess-3" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-3SoapOut">
+    <wsdl:part name="parameters" element="tns:QubeProcess-3Response" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-3aSoapIn">
+    <wsdl:part name="parameters" element="tns:QubeProcess-3a" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-3aSoapOut">
+    <wsdl:part name="parameters" element="tns:QubeProcess-3aResponse" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-1iSoapIn">
+    <wsdl:part name="parameters" element="tns:QubeProcess-1i" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-1iSoapOut">
+    <wsdl:part name="parameters" element="tns:QubeProcess-1iResponse" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-1iaSoapIn">
+    <wsdl:part name="parameters" element="tns:QubeProcess-1ia" />
+  </wsdl:message>
+  <wsdl:message name="QubeProcess-1iaSoapOut">
+    <wsdl:part name="parameters" element="tns:QubeProcess-1iaResponse" />
+  </wsdl:message>
+  <wsdl:message name="QubeBatchProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:QubeBatchProcess" />
+  </wsdl:message>
+  <wsdl:message name="QubeBatchProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:QubeBatchProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmsGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmsGroups" />
+  </wsdl:message>
+  <wsdl:message name="GetEmsGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmsGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterExeSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterExe" />
+  </wsdl:message>
+  <wsdl:message name="RegisterExeSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterExeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Overload-2SoapIn">
+    <wsdl:part name="parameters" element="tns:Overload-2" />
+  </wsdl:message>
+  <wsdl:message name="Overload-2SoapOut">
+    <wsdl:part name="parameters" element="tns:Overload-2Response" />
+  </wsdl:message>
+  <wsdl:message name="Overload-3SoapIn">
+    <wsdl:part name="parameters" element="tns:Overload-3" />
+  </wsdl:message>
+  <wsdl:message name="Overload-3SoapOut">
+    <wsdl:part name="parameters" element="tns:Overload-3Response" />
+  </wsdl:message>
+  <wsdl:portType name="QubeWSSoap">
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login using details from config file. Requires a unique ID for the session.</wsdl:documentation>
+      <wsdl:input name="Login-Overload-1" message="tns:Login-Overload-1SoapIn" />
+      <wsdl:output name="Login-Overload-1" message="tns:Login-Overload-1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login using details from config file. Requires a unique ID for the session.</wsdl:documentation>
+      <wsdl:input name="Login-Overload-1a" message="tns:Login-Overload-1aSoapIn" />
+      <wsdl:output name="Login-Overload-1a" message="tns:Login-Overload-1aSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login using passed username and password and Group and Application details from config file. Requires a unique ID for the session.</wsdl:documentation>
+      <wsdl:input name="Login-Overload-2" message="tns:Login-Overload-2SoapIn" />
+      <wsdl:output name="Login-Overload-2" message="tns:Login-Overload-2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login using passed username and password and Group and Application details from config file. Requires a unique ID for the session.</wsdl:documentation>
+      <wsdl:input name="Login-Overload-2a" message="tns:Login-Overload-2aSoapIn" />
+      <wsdl:output name="Login-Overload-2a" message="tns:Login-Overload-2aSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login just passed parameters. Requires a unique ID for the session.</wsdl:documentation>
+      <wsdl:input name="Login-Overload-3" message="tns:Login-Overload-3SoapIn" />
+      <wsdl:output name="Login-Overload-3" message="tns:Login-Overload-3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login just passed parameters. Requires a unique ID for the session.</wsdl:documentation>
+      <wsdl:input name="Login-Overload-3a" message="tns:Login-Overload-3aSoapIn" />
+      <wsdl:output name="Login-Overload-3a" message="tns:Login-Overload-3aSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login to the ECS System using XML connection data</wsdl:documentation>
+      <wsdl:input name="Login-Overload-4" message="tns:Login-Overload-4SoapIn" />
+      <wsdl:output name="Login-Overload-4" message="tns:Login-Overload-4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Log out of the ECS System</wsdl:documentation>
+      <wsdl:input message="tns:LogoutSoapIn" />
+      <wsdl:output message="tns:LogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Log out of the ECS System and delete User's temporary directory</wsdl:documentation>
+      <wsdl:input name="Logout-Remove-Temp-User-Dir" message="tns:Logout-Remove-Temp-User-DirSoapIn" />
+      <wsdl:output name="Logout-Remove-Temp-User-Dir" message="tns:Logout-Remove-Temp-User-DirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DebugAddMessage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add a message to the ECS debug file.</wsdl:documentation>
+      <wsdl:input message="tns:DebugAddMessageSoapIn" />
+      <wsdl:output message="tns:DebugAddMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DebugBegin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Begin ECS debugging.</wsdl:documentation>
+      <wsdl:input message="tns:DebugBeginSoapIn" />
+      <wsdl:output message="tns:DebugBeginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DebugEnd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Stop ECS debugging.</wsdl:documentation>
+      <wsdl:input message="tns:DebugEndSoapIn" />
+      <wsdl:output message="tns:DebugEndSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDebugFilters">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Set Debug Filters</wsdl:documentation>
+      <wsdl:input message="tns:SetDebugFiltersSoapIn" />
+      <wsdl:output message="tns:SetDebugFiltersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearDebugFilters">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Clear Debug Filters</wsdl:documentation>
+      <wsdl:input message="tns:ClearDebugFiltersSoapIn" />
+      <wsdl:output message="tns:ClearDebugFiltersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmsFileDescription">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get XML description of the configured EMS file</wsdl:documentation>
+      <wsdl:input message="tns:GetEmsFileDescriptionSoapIn" />
+      <wsdl:output message="tns:GetEmsFileDescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Assembly Information</wsdl:documentation>
+      <wsdl:input message="tns:GetAssemblyInfoSoapIn" />
+      <wsdl:output message="tns:GetAssemblyInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseReport">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Close the current report.</wsdl:documentation>
+      <wsdl:input message="tns:CloseReportSoapIn" />
+      <wsdl:output message="tns:CloseReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Call a Single Use Qube Business Process using supplied login values.</wsdl:documentation>
+      <wsdl:input name="QubeProcess-3" message="tns:QubeProcess-3SoapIn" />
+      <wsdl:output name="QubeProcess-3" message="tns:QubeProcess-3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Call a Single Use Qube Business Process using supplied login values.</wsdl:documentation>
+      <wsdl:input name="QubeProcess-3a" message="tns:QubeProcess-3aSoapIn" />
+      <wsdl:output name="QubeProcess-3a" message="tns:QubeProcess-3aSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Call Qube Business Process using existing session.</wsdl:documentation>
+      <wsdl:input name="QubeProcess-1i" message="tns:QubeProcess-1iSoapIn" />
+      <wsdl:output name="QubeProcess-1i" message="tns:QubeProcess-1iSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Call Qube Business Process using existing session.</wsdl:documentation>
+      <wsdl:input name="QubeProcess-1ia" message="tns:QubeProcess-1iaSoapIn" />
+      <wsdl:output name="QubeProcess-1ia" message="tns:QubeProcess-1iaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QubeBatchProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Call Qube Batch Business Process using existing session.</wsdl:documentation>
+      <wsdl:input message="tns:QubeBatchProcessSoapIn" />
+      <wsdl:output message="tns:QubeBatchProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmsGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DEPRECATED - Get Group names from the configured EMS file</wsdl:documentation>
+      <wsdl:input message="tns:GetEmsGroupsSoapIn" />
+      <wsdl:output message="tns:GetEmsGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterExe">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DEPRECATED - Register Exe</wsdl:documentation>
+      <wsdl:input message="tns:RegisterExeSoapIn" />
+      <wsdl:output message="tns:RegisterExeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Process">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DEPRECATED - Call a Single Use Qube Business Process using supplied login values.</wsdl:documentation>
+      <wsdl:input name="Overload-2" message="tns:Overload-2SoapIn" />
+      <wsdl:output name="Overload-2" message="tns:Overload-2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Process">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DEPRECATED - Call a Single Use Qube Business Process using supplied login values.</wsdl:documentation>
+      <wsdl:input name="Overload-3" message="tns:Overload-3SoapIn" />
+      <wsdl:output name="Overload-3" message="tns:Overload-3SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QubeWSSoap" type="tns:QubeWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-1" style="document" />
+      <wsdl:input name="Login-Overload-1">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-1">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-1a" style="document" />
+      <wsdl:input name="Login-Overload-1a">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-1a">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-2" style="document" />
+      <wsdl:input name="Login-Overload-2">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-2">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-2a" style="document" />
+      <wsdl:input name="Login-Overload-2a">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-2a">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-3" style="document" />
+      <wsdl:input name="Login-Overload-3">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-3">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-3a" style="document" />
+      <wsdl:input name="Login-Overload-3a">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-3a">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-4" style="document" />
+      <wsdl:input name="Login-Overload-4">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-4">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Logout-Remove-Temp-User-Dir" style="document" />
+      <wsdl:input name="Logout-Remove-Temp-User-Dir">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Logout-Remove-Temp-User-Dir">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DebugAddMessage">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/DebugAddMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DebugBegin">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/DebugBegin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DebugEnd">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/DebugEnd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDebugFilters">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/SetDebugFilters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearDebugFilters">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/ClearDebugFilters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmsFileDescription">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/GetEmsFileDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyInfo">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/GetAssemblyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseReport">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/CloseReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-3" style="document" />
+      <wsdl:input name="QubeProcess-3">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-3">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-3a" style="document" />
+      <wsdl:input name="QubeProcess-3a">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-3a">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-1i" style="document" />
+      <wsdl:input name="QubeProcess-1i">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-1i">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-1ia" style="document" />
+      <wsdl:input name="QubeProcess-1ia">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-1ia">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeBatchProcess">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeBatchProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmsGroups">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/GetEmsGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterExe">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/RegisterExe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Process">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Overload-2" style="document" />
+      <wsdl:input name="Overload-2">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Overload-2">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Process">
+      <soap:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Overload-3" style="document" />
+      <wsdl:input name="Overload-3">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Overload-3">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="QubeWSSoap12" type="tns:QubeWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-1" style="document" />
+      <wsdl:input name="Login-Overload-1">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-1">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-1a" style="document" />
+      <wsdl:input name="Login-Overload-1a">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-1a">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-2" style="document" />
+      <wsdl:input name="Login-Overload-2">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-2">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-2a" style="document" />
+      <wsdl:input name="Login-Overload-2a">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-2a">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-3" style="document" />
+      <wsdl:input name="Login-Overload-3">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-3">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-3a" style="document" />
+      <wsdl:input name="Login-Overload-3a">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-3a">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Login-Overload-4" style="document" />
+      <wsdl:input name="Login-Overload-4">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Login-Overload-4">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Logout-Remove-Temp-User-Dir" style="document" />
+      <wsdl:input name="Logout-Remove-Temp-User-Dir">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Logout-Remove-Temp-User-Dir">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DebugAddMessage">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/DebugAddMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DebugBegin">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/DebugBegin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DebugEnd">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/DebugEnd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDebugFilters">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/SetDebugFilters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearDebugFilters">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/ClearDebugFilters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmsFileDescription">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/GetEmsFileDescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyInfo">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/GetAssemblyInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseReport">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/CloseReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-3" style="document" />
+      <wsdl:input name="QubeProcess-3">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-3">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-3a" style="document" />
+      <wsdl:input name="QubeProcess-3a">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-3a">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-1i" style="document" />
+      <wsdl:input name="QubeProcess-1i">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-1i">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeProcess">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeProcess-1ia" style="document" />
+      <wsdl:input name="QubeProcess-1ia">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QubeProcess-1ia">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QubeBatchProcess">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/QubeBatchProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmsGroups">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/GetEmsGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterExe">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/RegisterExe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Process">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Overload-2" style="document" />
+      <wsdl:input name="Overload-2">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Overload-2">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Process">
+      <soap12:operation soapAction="http://qube.qubeglobal.com/ns/webservice/Overload-3" style="document" />
+      <wsdl:input name="Overload-3">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Overload-3">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QubeWS">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Qube Webservice</wsdl:documentation>
+    <wsdl:port name="QubeWSSoap" binding="tns:QubeWSSoap">
+      <soap:address location="http://94.250.233.131/QubeWs/qubews.asmx" />
+    </wsdl:port>
+    <wsdl:port name="QubeWSSoap12" binding="tns:QubeWSSoap12">
+      <soap12:address location="http://94.250.233.131/QubeWs/qubews.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>    
+    <PackageId>JobLogic.Infrastructure.UnitTest.EFCore</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>JobLogic</Authors>
+    <Company>JobLogic</Company>
+    <Product>JobLogic.Infrastructure.UnitTest.EFCore</Product>
+    <Description>https://go.joblogic.com/favicon.ico</Description>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.15" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="Ninject.MockingKernel.Moq" Version="3.3.0" />
+	<PackageReference Include="MockQueryable.Moq" Version="6.0.1" />
+  </ItemGroup>
+
+</Project>

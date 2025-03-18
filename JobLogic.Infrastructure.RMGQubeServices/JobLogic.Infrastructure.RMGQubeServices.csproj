@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.RMGQubeServices</Product>
+    <Description>JobLogic.Infrastructure.RMGQubeServices</Description>
+    <PackageId>JobLogic.Infrastructure.RMGQubeServices</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>JobLogic.Infrastructure.RMGQubeServices</PackageReleaseNotes>
+    <Version>1.0.8</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>1.0.8</FileVersion>
+    <Company>JobLogic</Company>
+    <AssemblyVersion>1.0.8</AssemblyVersion>
+    <Authors>JobLogic</Authors>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JobLogic.Infrastructure.ServiceResponders" Version="1.1.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.5.3" />
+  </ItemGroup>
+
+</Project>

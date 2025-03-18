@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.HealthCheck</Product>
+    <Description>JobLogic.Infrastructure.HealthCheck </Description>
+    <Copyright>Copyright 2021</Copyright>
+    <PackageId>JobLogic.Infrastructure.HealthCheck</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>Job Logic</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <Authors>Job Logic</Authors>
+    <PackageReleaseNotes>Upgrade package fix oss</PackageReleaseNotes>
+    <Version>1.150.0</Version>
+    <FileVersion>1.150.0</FileVersion>
+    <AssemblyVersion>1.150.0</AssemblyVersion>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="5.0.1" />
+  </ItemGroup>
+
+</Project>

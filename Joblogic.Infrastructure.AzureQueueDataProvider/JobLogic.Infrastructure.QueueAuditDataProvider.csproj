@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.QueueAuditDataProvider</Product>
+    <Description>JobLogic.Infrastructure.QueueAuditDataProvider</Description>
+    <PackageId>JobLogic.Infrastructure.QueueAuditDataProvider</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Upgrade package fix oss</PackageReleaseNotes>
+    <Version>1.150.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>1.150.0</FileVersion>
+    <Company>JobLogic</Company>
+    <AssemblyVersion>1.150.0</AssemblyVersion>
+    <Authors>JobLogic</Authors>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Audit.NET" Version="19.4.1" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.2.0" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+</Project>

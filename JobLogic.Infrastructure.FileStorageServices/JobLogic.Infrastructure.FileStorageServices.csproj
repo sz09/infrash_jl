@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.FileStorageServices</Product>
+    <Description>JobLogic.Infrastructure.FileStorageServices</Description>
+    <PackageId>JobLogic.Infrastructure.FileStorageServices</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Remove Temp Storage Blob </PackageReleaseNotes>
+    <Version>3.172.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>JobLogic</Company>
+    <Authors>JobLogic</Authors>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <FileVersion>3.172.0</FileVersion>
+    <AssemblyVersion>3.172.0</AssemblyVersion>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="JobLogic.Infrastructure.ImageHelper" Version="1.155.0" />
+    <PackageReference Include="JobLogic.Infrastructure.ServiceResponders" Version="1.1.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+    <PackageReference Include="JobLogic.Infrastructure.Contract.Extensions" Version="3.150.0" />
+  </ItemGroup>
+  
+</Project>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.CultureHelper</Product>
+    <Description>JobLogic.Infrastructure.CultureHelper</Description>
+    <PackageId>JobLogic.Infrastructure.CultureHelper</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Fix LocalDateToUTCDateTime</PackageReleaseNotes>
+    <Version>2.164.1</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>2.164.1</FileVersion>
+    <Company>JobLogic.Infrastructure.CultureHelper</Company>
+	<PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>2.164.1</AssemblyVersion>
+    <Authors>JobLogic.Infrastructure.CultureHelper</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JobLogic.Infrastructure.Utilities" Version="1.150.0" />
+  </ItemGroup>
+
+</Project>

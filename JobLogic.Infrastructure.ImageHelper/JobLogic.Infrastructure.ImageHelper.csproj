@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.ImageHelper</Product>
+    <Description>JobLogic.Infrastructure.ImageHelper target .net standard 2.0</Description>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageId>JobLogic.Infrastructure.ImageHelper</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Remove ConvertSVGStringToImageAndGetBytes because we don't use this func anymore and this func was inject with package (fizzler.1.2.0) </PackageReleaseNotes>
+    <Version>1.176.0</Version>
+    <PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>1.176.0</FileVersion>
+    <Company>JobLogic</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>1.176.0</AssemblyVersion>
+    <Authors>JobLogic</Authors>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.2" />
+  </ItemGroup>
+</Project>

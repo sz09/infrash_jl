@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://94.250.233.131/QubeWs/qubews.asmx?wsdl" docRef="http://94.250.233.131/QubeWs/qubews.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://94.250.233.131/QubeWs/qubews.asmx" xmlns:q1="http://qube.qubeglobal.com/ns/webservice/" binding="q1:QubeWSSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://94.250.233.131/QubeWs/qubews.asmx" xmlns:q2="http://qube.qubeglobal.com/ns/webservice/" binding="q2:QubeWSSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

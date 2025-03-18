@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>JobLogic</Authors>
+    <Company>JobLogic</Company>
+    <Product>JobLogic.Infrastructure.Slack</Product>
+    <Description>Send message via Slack's webhook</Description>
+    <Copyright>JobLogic</Copyright>
+    <PackageReleaseNotes>Send message via Slack's webhook</PackageReleaseNotes>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

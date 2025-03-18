@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Common</Product>
+    <Description>Common Nuget to shared between Joblogic and Tracker</Description>
+    <PackageId>JobLogic.Common</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Add BaseWebAPIRequest </PackageReleaseNotes>
+    <Version>1.178.1</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>JobLogic</Company>
+    <Authors>JobLogic</Authors>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <FileVersion>1.178.1</FileVersion>
+    <AssemblyVersion>1.178.1</AssemblyVersion>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

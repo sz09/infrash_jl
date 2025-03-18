@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Product>JobLogic.InfrastructureCore.HttpUtilities</Product>
+    <Description>JobLogic.InfrastructureCore.HttpUtilities</Description>
+    <PackageId>JobLogic.InfrastructureCore.HttpUtilities</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Upgrade package fix oss</PackageReleaseNotes>
+    <Version>1.150.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>1.150.0</FileVersion>
+    <Company>Job Logic</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>1.150.0</AssemblyVersion>
+    <Authors>Job Logic</Authors>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="5.0.1" />
+  </ItemGroup>
+
+</Project>

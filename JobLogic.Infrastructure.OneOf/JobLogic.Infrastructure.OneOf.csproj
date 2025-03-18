@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.OneOf</Product>
+    <Description>https://go.joblogic.com/favicon.ico</Description>
+    <PackageId>JobLogic.Infrastructure.OneOf</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Upgrade package fix oss</PackageReleaseNotes>
+    <Version>2.150.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>2.150.0</FileVersion>
+    <Company>JobLogic.Infrastructure.OneOf</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>2.150.0</AssemblyVersion>
+    <Authors>JobLogic.Infrastructure.OneOf</Authors>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

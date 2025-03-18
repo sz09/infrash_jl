@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.Processor</Product>
+    <Description>JobLogic.Infrastructure.Processor</Description>
+    <PackageId>JobLogic.Infrastructure.Processor</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Upgrade package fix oss</PackageReleaseNotes>
+    <Version>1.150.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>JobLogic</Company>
+    <Authors>JobLogic</Authors>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <FileVersion>1.150.0</FileVersion>
+    <AssemblyVersion>1.150.0</AssemblyVersion>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JobLogic.Infrastructure.Track" Version="2.150.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.21.0" />
+  </ItemGroup>
+
+</Project>

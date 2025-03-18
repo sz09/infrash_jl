@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.DatabaseManager</Product>
+    <Description>JobLogic.DatabaseManager</Description>
+    <PackageId>JobLogic.DatabaseManager</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Upgrade package fix oss</PackageReleaseNotes>
+    <Version>1.157.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>JobLogic</Company>
+    <Authors>JobLogic</Authors>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <FileVersion>1.150.0</FileVersion>
+    <AssemblyVersion>1.150.0</AssemblyVersion>
+    <LangVersion>8.0</LangVersion>
+    <Title>JobLogic.DatabaseManager</Title>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="JobLogic.Infrastructure.Utilities" Version="1.150.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
+  </ItemGroup>
+</Project>

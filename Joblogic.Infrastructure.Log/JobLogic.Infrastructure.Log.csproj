@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Infrastructure.Log</Product>
+    <Description>JobLogic.Infrastructure.Log</Description>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageId>JobLogic.Infrastructure.Log</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>JobLogic.Infrastructure.Log</PackageReleaseNotes>
+    <Version>1.0.5</Version>
+    <PackageLicenseUrl>https://go.joblogic.com</PackageLicenseUrl>
+    <PackageProjectUrl>https://go.joblogic.com</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>1.0.5</FileVersion>
+    <Company>JobLogic.Infrastructure.Log</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>1.0.5</AssemblyVersion>
+    <Authors>JobLogic.Infrastructure.Log</Authors>
+    <LangVersion>8.0</LangVersion>   
+  </PropertyGroup>
+</Project>

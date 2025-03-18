@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<PackageId>JobLogic.InfrastructureCore.IdentityServer</PackageId>
+		<Version>3.188.1</Version>
+		<Authors>JobLogic.InfrastructureCore.IdentityServer</Authors>
+		<Company>JobLogic.InfrastructureCore.IdentityServer</Company>
+		<Product>JobLogic.InfrastructureCore.IdentityServer</Product>
+		<Description>https://go.joblogic.com/favicon.ico</Description>
+		<PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+		<AssemblyVersion>3.188.1</AssemblyVersion>
+		<EnableNETAnalyzers>False</EnableNETAnalyzers>
+		<PackageVersion>3.188.1</PackageVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="IdentityModel" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="3.1.7" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+	</ItemGroup>
+
+</Project>

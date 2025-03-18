@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>    
+    <PackageId>JobLogic.Infrastructure.EntityframeworkCore</PackageId>
+    <Version>1.0.2</Version>
+    <Authors>JobLogic.Infrastructure.EntityframeworkCore</Authors>
+    <Company>JobLogic.Infrastructure.EntityframeworkCore</Company>
+    <Product>JobLogic.Infrastructure.EntityframeworkCore</Product>
+    <Description>https://go.joblogic.com/favicon.ico</Description>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JobLogic.Infrastructure.EntityframeworkCore.TenancyInterceptor" Version="1.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.15" />
+  </ItemGroup>
+
+</Project>

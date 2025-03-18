@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Pipedrive.net</AssemblyName>
+    <Title>Pipedrive.net</Title>
+    <Description>Pipedrive.net is an async .NET Standard client for pipedrive.com, add missing deal that joblogic is in need. Once the author accept the PR, we could use their official one</Description>
+    <VersionPrefix>0.5.17</VersionPrefix>
+    <Version>0.150.0</Version>
+    <Authors>Joblogic</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <PackageId>JobLogic.Pipedrive.net</PackageId>
+    <PackageTags>pipedrive;crm</PackageTags>
+    <PackageProjectUrl>https://github.com/DavidRouyer/pipedrive-dotnet</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/DavidRouyer/pipedrive-dotnet/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>Upgrade package fix oss</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/DavidRouyer/pipedrive-dotnet</RepositoryUrl>
+    <SignAssembly>true</SignAssembly>
+
+    <!-- SourceLink -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\pipedrive.ruleset</CodeAnalysisRuleSet>
+    <Product>Pipedrive.net</Product>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>0.150.0</FileVersion>
+    <Company>Joblogic</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>0.150.0</AssemblyVersion>
+  </PropertyGroup>
+</Project>

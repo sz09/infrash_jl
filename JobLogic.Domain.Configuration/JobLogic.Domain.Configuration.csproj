@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>netstandard2.1</TargetFramework>
+	<Product>JobLogic.Domain.Configuration</Product>
+	<Description>Configure Database TransactionHandler and ExecutionStrategy</Description>
+	<PackageId>JobLogic.Domain.Configuration</PackageId>
+	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	<Version>1.179.0</Version>
+	<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+	<Company>JobLogic</Company>
+	<Authors>JobLogic</Authors>
+	<PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+	<Copyright>Copyright 2023</Copyright>
+	<PackageLicenseUrl>http://go.joblogic.com</PackageLicenseUrl>
+	<PackageProjectUrl>http://go.joblogic.com</PackageProjectUrl>
+	<FileVersion>1.179.0</FileVersion>
+	<AssemblyVersion>1.179.0</AssemblyVersion>
+	<LangVersion>8.0</LangVersion>
+	<PackageReleaseNotes>Configure Database TransactionHandler and ExecutionStrategy</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+</Project>

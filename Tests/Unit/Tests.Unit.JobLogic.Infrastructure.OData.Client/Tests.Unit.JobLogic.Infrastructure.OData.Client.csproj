@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="Moq" Version="4.14.6" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.0.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\JobLogic.Infrastructure.OData.Client\JobLogic.Infrastructure.OData.Client.csproj" />
+    <ProjectReference Include="..\..\..\JobLogic.Infrastructure.UnitTest\JobLogic.Infrastructure.UnitTest.csproj" />
+  </ItemGroup>
+
+</Project>

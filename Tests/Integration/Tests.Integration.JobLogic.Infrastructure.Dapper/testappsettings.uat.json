@@ -1,0 +1,3 @@
+{
+  "JobLogicConnection": "Server=cicd.joblogicinternal.com, 1433;Database=JobLogicUatIntegTest;User Id=sa;Password=zxcv1234;TrustServerCertificate=true"
+}

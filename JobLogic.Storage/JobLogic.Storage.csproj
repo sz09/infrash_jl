@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.Storage</Product>
+    <Description>JobLogic.Storage</Description>
+    <PackageId>JobLogic.Storage</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Remove Temp Storage Blob</PackageReleaseNotes>
+    <Version>2.172.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>2.172.0</FileVersion>
+    <Company>JobLogic.Storage</Company>
+    <PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+    <AssemblyVersion>2.172.0</AssemblyVersion>
+    <Authors>JobLogic.Storage</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.7.0" />
+    <PackageReference Include="Azure.Storage.Files.Shares" Version="12.6.2" />
+    <PackageReference Include="JobLogic.Infrastructure.Contract.Extensions" Version="3.150.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.1" />
+  </ItemGroup>
+</Project>

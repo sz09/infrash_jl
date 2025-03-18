@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>JobLogic.OAuth.Services</Product>
+    <Description>Introduce Joblogic.OAuth.Services</Description>
+    <PackageId>JobLogic.OAuth.Services</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Upgrade IdentityModel nuget to 6.0.0 version, to match with JobLogic.InfrastructureCore.IdentityServer project
+Update Microsoft.Extensions.Http to 3.1.30 to resolve compatible issue</PackageReleaseNotes>
+    <Version>1.151.1</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>JobLogic.OAuth.Services</Company>
+	<PackageIconUrl>https://go.joblogic.com/favicon.ico</PackageIconUrl>
+	<Authors>Job Logic</Authors>
+	<FileVersion>1.151.1</FileVersion>
+	<AssemblyVersion>1.151.1</AssemblyVersion>
+	<UserSecretsId>d4b49448-98d0-4bb7-b1e2-83b22eafad36</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.30" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
